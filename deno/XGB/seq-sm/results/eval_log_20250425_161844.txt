@@ -1,0 +1,59 @@
+=== 模型评估报告 ===
+生成时间: 2025-04-25 16:18:44
+
+样本数量: 185
+正负样本比例: 92:93
+
+
+=== 数值指标 ===
+Accuracy                 : 0.7784
+Balanced Accuracy        : 0.7783
+Precision (Macro)        : 0.7784
+Recall (Macro)           : 0.7783
+F1 (Macro)               : 0.7784
+Matthews Correlation     : 0.5568
+Cohen's Kappa            : 0.5567
+ROC AUC                  : 0.8891
+Average Precision        : 0.8980
+Log Loss                 : 0.4458
+
+=== 详细分类报告 ===
+              precision    recall  f1-score   support
+
+     Non-CPP       0.78      0.78      0.78        93
+         CPP       0.78      0.77      0.78        92
+
+    accuracy                           0.78       185
+   macro avg       0.78      0.78      0.78       185
+weighted avg       0.78      0.78      0.78       185
+已保存图片: results/confusion_matrix.png
+已保存图片: results/roc_curve.png
+已保存图片: results/precision_recall_curve.png
+已保存图片: results/calibration_curve.png
+
+=== 数值指标 ===
+Accuracy                 : 0.7784
+Balanced Accuracy        : 0.7783
+Precision (Macro)        : 0.7784
+Recall (Macro)           : 0.7783
+F1 (Macro)               : 0.7784
+Matthews Correlation     : 0.5568
+Cohen's Kappa            : 0.5567
+ROC AUC                  : 0.8891
+Average Precision        : 0.8980
+Log Loss                 : 0.4458
+
+=== 详细分类报告 ===
+              precision    recall  f1-score   support
+
+     Non-CPP       0.78      0.78      0.78        93
+         CPP       0.78      0.77      0.78        92
+
+    accuracy                           0.78       185
+   macro avg       0.78      0.78      0.78       185
+weighted avg       0.78      0.78      0.78       185
+已保存图片: results/metric_comparison.png
+
+评估完成！所有结果已保存至以下目录:
+图片: ./*.png
+日志: ./eval_log_20250425_161844.txt

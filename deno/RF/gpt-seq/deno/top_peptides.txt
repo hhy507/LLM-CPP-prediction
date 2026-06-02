@@ -1,0 +1,3 @@
+Peptide: TRRRLPIILAHNRRRPFH, CPP Probability: 0.8707
+Peptide: RRRRSHKNRPCR, CPP Probability: 0.8622
+Peptide: SFFRHKRRRLTTHWPRNLSRRVI, CPP Probability: 0.8598
