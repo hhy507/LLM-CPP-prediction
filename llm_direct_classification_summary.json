@@ -1,0 +1,59 @@
+{
+  "test_set": "deno/RF/seq/data/test.xlsx",
+  "n_total": 185,
+  "models": {
+    "DeepSeek-V3": "deepseek-chat",
+    "GPT-4o": "openai/gpt-4o"
+  },
+  "llm_direct": {
+    "DeepSeek-V3": {
+      "n": 185,
+      "abstain": 0,
+      "tp": 53,
+      "tn": 90,
+      "fp": 3,
+      "fn": 39,
+      "acc": 0.772972972972973,
+      "precision": 0.9464285714285714,
+      "recall": 0.5760869565217391,
+      "f1": 0.7162162162162162,
+      "mcc": 0.591846107875407
+    },
+    "GPT-4o": {
+      "n": 185,
+      "abstain": 0,
+      "tp": 67,
+      "tn": 91,
+      "fp": 2,
+      "fn": 25,
+      "acc": 0.8540540540540541,
+      "precision": 0.9710144927536232,
+      "recall": 0.7282608695652174,
+      "f1": 0.8322981366459627,
+      "mcc": 0.7307200780889092
+    }
+  },
+  "ml_baseline_same_split": {
+    "RF-Fre": {
+      "acc": 0.946,
+      "precision": null,
+      "recall": null,
+      "f1": 0.948,
+      "mcc": 0.893
+    },
+    "RF-GPT-Fre": {
+      "acc": 0.903,
+      "precision": null,
+      "recall": null,
+      "f1": 0.906,
+      "mcc": 0.806
+    },
+    "RF-DS-Fre": {
+      "acc": 0.897,
+      "precision": null,
+      "recall": null,
+      "f1": 0.898,
+      "mcc": 0.799
+    }
+  }
+}

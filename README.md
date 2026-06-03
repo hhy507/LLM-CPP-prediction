@@ -72,6 +72,25 @@ The scripts read and write relative paths from the repository root. A typical wo
 > Note: some helper scripts contain relative input/output paths that may need to be adjusted to
 > your local directory layout.
 
+## Direct LLM classification baseline
+
+`llm_direct_classification.py` reproduces the direct-LLM baseline requested in review: each of
+the 185 held-out test peptides is given directly to a current-version LLM, which returns a binary
+CPP/non-CPP label; the accuracy is compared with the ML models on the same split. API keys are read
+**only** from environment variables.
+
+```bash
+export DEEPSEEK_API_KEY=...      # DeepSeek official API
+export OPENROUTER_API_KEY=...    # OpenRouter (for openai/gpt-4o)
+python llm_direct_classification.py          # full 185-sequence run
+```
+
+Outputs `llm_direct_classification_results.csv` (per-sequence predictions) and
+`llm_direct_classification_summary.json` (metrics). On the held-out test set, direct LLM
+classification (GPT-4o 0.854, DeepSeek-V3 0.773 accuracy) is less accurate than the ML models
+(RF-Fre 0.946, RF-GPT-Fre 0.903), confirming the value of operationalising the LLM-derived rules
+within a classical classifier.
+
 ## Citation
 
 If you use this code, please cite the manuscript (Manuscript ID 1845913). Full citation details
