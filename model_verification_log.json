@@ -1,0 +1,67 @@
+{
+  "purpose": "Verify that the direct-LLM CPP classification used OpenAI GPT-4o (Reviewer 5 follow-up).",
+  "platform": "OpenRouter (https://openrouter.ai), upstream provider = OpenAI / Azure OpenAI",
+  "experiment_model_id_used": "openai/gpt-4o",
+  "test_sequence": {
+    "id": 280,
+    "sequence": "MDAQTRRRERRAEKQAQWKAANGC",
+    "ground_truth": "CPP (1)"
+  },
+  "alias_catalogue_metadata": {
+    "id": "openai/gpt-4o",
+    "canonical_slug": "openai/gpt-4o",
+    "name": "OpenAI: GPT-4o",
+    "created": 1715558400,
+    "context_length": 128000,
+    "created_human": "2024-05-13"
+  },
+  "verification_calls": [
+    {
+      "utc_timestamp": "2026-06-09T03:41:15.945406+00:00",
+      "requested_model": "openai/gpt-4o",
+      "response_model": "openai/gpt-4o",
+      "provider": "Azure",
+      "generation_id": "gen-1780976476-CVflDX8NRL8ZjfZePVdT",
+      "cpp_answer_for_seq_280": "1",
+      "ground_truth_label": 1,
+      "comment": "earlier verification call, recorded to document provider routing"
+    },
+    {
+      "utc_timestamp": "2026-06-09T03:45:44.391901+00:00",
+      "requested_model": "openai/gpt-4o",
+      "response_model": "openai/gpt-4o",
+      "provider": "OpenAI",
+      "generation_id": "gen-1780976745-61iyX8YGQ6uCQ3XcmcHy",
+      "cpp_answer_for_seq_280": "1",
+      "ground_truth_label": 1
+    },
+    {
+      "utc_timestamp": "2026-06-09T03:45:45.957436+00:00",
+      "requested_model": "openai/gpt-4o",
+      "response_model": "openai/gpt-4o",
+      "provider": "OpenAI",
+      "generation_id": "gen-1780976746-4FyaVWIV9nH058QjkaAs",
+      "cpp_answer_for_seq_280": "1",
+      "ground_truth_label": 1
+    },
+    {
+      "utc_timestamp": "2026-06-09T03:45:47.879626+00:00",
+      "requested_model": "openai/gpt-4o",
+      "response_model": "openai/gpt-4o",
+      "provider": "OpenAI",
+      "generation_id": "gen-1780976748-gVghk6QybqWTsjiBxRm8",
+      "cpp_answer_for_seq_280": "1",
+      "ground_truth_label": 1
+    },
+    {
+      "utc_timestamp": "2026-06-09T03:45:49.446080+00:00",
+      "requested_model": "openai/gpt-4o-2024-11-20",
+      "response_model": "openai/gpt-4o-2024-11-20",
+      "provider": "OpenAI",
+      "generation_id": "gen-1780976752-Jy4aOxJxWYrAFwQZD3bM",
+      "cpp_answer_for_seq_280": "1",
+      "ground_truth_label": 1
+    }
+  ],
+  "note": "openai/gpt-4o is OpenRouter's rolling alias for OpenAI GPT-4o; its canonical_slug remains 'openai/gpt-4o' and the API does not expose the underlying dated snapshot. OpenRouter may route the alias to either OpenAI or Azure OpenAI, both serving the OpenAI GPT-4o model. The dated snapshot openai/gpt-4o-2024-11-20 (provider OpenAI) is included as a reproducible anchor and returns the same classification."
+}
